@@ -10,7 +10,7 @@ RNA-gegevens uit bloedmonsters zijn vergeleken met het menselijke referentiegeno
 Vervolgens is er pathway-analyse gedaan met het `pathview`-pakket, gericht op de KEGG-pathway voor RA (hsa05323). Ook is een GO-analyse (Gene Ontology) uitgevoerd met `goseq`, waarbij gecorrigeerd werd voor verschillen in genlengte. Hiervoor zijn gegevens over genlengtes en ID’s opgehaald via databases als `org.Hs.eg.db` en `biomaRt`.
 
 ### Resultaten
-De resultaten zijn weergegeven in het mapje 'results'.
+De resultaten zijn te vinden in de folder 'Results'. Er zijn een [Volcano plot](Results/VolcanoplotWC.png), [Top 10 upregulated genes (barplot)](Results/top%2010%20upregulated%20genes%20barplot.png), [Top 10 downregulated genes (barplot)](Results/top%2010%20downregulated%20genes%20barplot.png), [KEGG Pathway RA (hsa05323)](Results/hsa05323.pathview.png), [KEGG Pathway hsa04610](Results/hsa04610.pathview.png) en een [GO verrijkte processen (csv)](Results/GO_significante_resultaten.csv) gemaakt.
 
 Een opvallend opgereguleerd gen was *ANKRD30BL*, dat codeert voor een eiwit met een ankyrin-repeat domein. Hoewel dit gen nog weinig onderzocht is bij RA, zijn zulke eiwitten vaak betrokken bij signaaloverdracht in cellen en kunnen ze een rol spelen bij ontstekingen (Jin et al., 2024). Ook *FAM47A* viel op; dit gen is nog weinig onderzocht, maar zou mogelijk betrokken kunnen zijn bij het regelen van genactiviteit.
 
