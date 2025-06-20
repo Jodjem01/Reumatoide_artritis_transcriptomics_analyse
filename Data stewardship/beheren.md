@@ -3,12 +3,12 @@
 Als je onderzoek doet, is het belangrijk om je data en scripts netjes en duidelijk op te slaan. Zo voorkom je fouten, kun je makkelijk terugvinden wat je hebt gedaan en kunnen anderen je werk begrijpen of opnieuw uitvoeren.
 
 
-### Waarom is dit belangrijk?
+## Waarom is dit belangrijk?
 
 Een goede structuur zorgt ervoor dat je geen gegevens kwijtraakt of in de war raakt. Het helpt ook als je samenwerkt of als je later iets terug wilt zoeken. In de wetenschap is het belangrijk dat anderen je werk kunnen controleren.
 
 
-### Mappenstructuur
+## Mappenstructuur
 
 We gebruiken een vaste mappenstructuur voor overzicht. In dit project ziet die er zo uit
 ```
@@ -19,10 +19,10 @@ We gebruiken een vaste mappenstructuur voor overzicht. In dit project ziet die e
 ├── data_stewardship/      # Uitleg over hoe de data is georganiseerd
 ```
 
-## Zo weet iedereen meteen waar alles staat. Het voorkomt verwarring en zorgt dat scripts automatisch de juiste bestanden kunnen vinden.
+### Zo weet iedereen meteen waar alles staat. Het voorkomt verwarring en zorgt dat scripts automatisch de juiste bestanden kunnen vinden.
 
 
-### Namen van bestanden
+## Namen van bestanden
 
 Duidelijke bestandsnamen zijn gegeven volgens dit patroon: `nummer_onderdeel_omschrijving.ext`, bijvoorbeeld:
 
@@ -30,10 +30,10 @@ Duidelijke bestandsnamen zijn gegeven volgens dit patroon: `nummer_onderdeel_oms
 * `RA_counts_matrix.csv`
 * `Results_case.csv`
 
-## Op deze manier weet iedereen meteen wat een bestand doet en in welke volgorde ze horen. Dat is handig bij sorteren of automatisch verwerken.
+### Op deze manier weet iedereen meteen wat een bestand doet en in welke volgorde ze horen. Dat is handig bij sorteren of automatisch verwerken.
 
 
-### Versiebeheer
+## Versiebeheer
 
 Versiebeheer betekent dat je bijhoudt wat er verandert in je bestanden. We gebruiken Git en GitHub:
 
@@ -42,7 +42,7 @@ Versiebeheer betekent dat je bijhoudt wat er verandert in je bestanden. We gebru
 * Je kunt aan verschillende versies tegelijk werken.
 
 
-### Uitleg in je script
+## Uitleg in het script
 
 In elk script staan opmerkingen (met `#`) waarin wordt uitgelegd:
 
@@ -53,7 +53,7 @@ In elk script staan opmerkingen (met `#`) waarin wordt uitgelegd:
 Zo blijft het script duidelijk, ook als je er later weer mee aan de slag gaat of als iemand anders het gebruikt.
 
 
-### De scripts worden gedeeld op:
+## De scripts worden gedeeld op:
 
 * GitHub – om code te bewaren en te delen
 * GitLab – alternatief met privéprojecten
@@ -61,7 +61,7 @@ Zo blijft het script duidelijk, ook als je er later weer mee aan de slag gaat of
 * OSF.io – handig voor complete onderzoeksprojecten
 
 
-### Data veilig opslaan
+## Data veilig opslaan
 
 R is gebruikt voor de analyse en bewaarden de bestanden lokaal in een nette map. Alleen geschikte bestanden zijn gedeeld op GitHub. Grote of gevoelige bestanden zijn **niet** geüpload. Voor gevoelige data gebruik je:
 
@@ -70,7 +70,7 @@ R is gebruikt voor de analyse en bewaarden de bestanden lokaal in een nette map.
 * Geen openbare uploads zonder anonimisering
 
 
-### Omgaan met gevoelige of persoonlijke data
+## Omgaan met gevoelige of persoonlijke data
 
 Bij gevoelige data (zoals medische informatie):
 
@@ -81,7 +81,7 @@ Bij gevoelige data (zoals medische informatie):
 In dit project is alleen gebruik gemaakt van openbare RNA-seq data, zonder persoonsgegevens.
 
 
-### Open data en publiceren
+## Open data en publiceren
 
 Open data:
 
@@ -89,5 +89,5 @@ Open data:
 * Laat anderen je werk controleren of herhalen
 * Helpt de wetenschap vooruit
 
-Als het kan, publiceer je jouw dataset (of bewerkte versies zoals count matrices) op platforms zoals GEO, Figshare of Zenodo.
+Als het kan, word de dataset gepubliceerd (of bewerkte versies zoals count matrices) op platforms zoals GEO, Figshare of Zenodo.
 
