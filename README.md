@@ -10,7 +10,7 @@ RNA-gegevens uit bloedmonsters zijn vergeleken met het menselijke referentiegeno
 Vervolgens is er pathway-analyse gedaan met het `pathview`-pakket, gericht op de KEGG-pathway voor RA (hsa05323). Ook is een GO-analyse (Gene Ontology) uitgevoerd met `goseq`, waarbij gecorrigeerd werd voor verschillen in genlengte. Hiervoor zijn gegevens over genlengtes en ID’s opgehaald via databases als `org.Hs.eg.db` en `biomaRt`.
 
 ### Resultaten
-Er zijn 199 genen gevonden die duidelijk meer of minder actief waren bij RA-patiënten. Daarvan waren er 83 opgereguleerd (meer actief) en 116 ondergereguleerd (minder actief). Een volcanoplot liet een duidelijk onderscheid zien tussen sterk gereguleerde en niet-significante genen.
+De resultaten zijn weergegeven in het mapje 'results'.
 
 Een opvallend opgereguleerd gen was *ANKRD30BL*, dat codeert voor een eiwit met een ankyrin-repeat domein. Hoewel dit gen nog weinig onderzocht is bij RA, zijn zulke eiwitten vaak betrokken bij signaaloverdracht in cellen en kunnen ze een rol spelen bij ontstekingen (Jin et al., 2024). Ook *FAM47A* viel op; dit gen is nog weinig onderzocht, maar zou mogelijk betrokken kunnen zijn bij het regelen van genactiviteit.
 
