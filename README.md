@@ -1,3 +1,5 @@
+## Van Gen tot Gewricht: Een Transcriptomics-analyse van Reumatoïde Artritis
+
 ### Inleiding
 Reumatoïde artritis (RA) is een auto-immuunziekte waarbij het eigen afweersysteem het lichaam aanvalt. Dit zorgt voor ontstekingen in de gewrichten en kan op termijn leiden tot schade aan bot en kraakbeen. Ongeveer 1% van de wereldbevolking heeft RA. Vrouwen krijgen het vaker dan mannen [(McInnes & Schett, 2011)](Documents/bronnen/pdf%20bronnen/mcinnes2011.pdf). De ziekte heeft veel invloed op het dagelijks leven en kan zonder behandeling leiden tot pijn, moeite met bewegen en uiteindelijk invaliditeit. RA ontstaat door een combinatie van erfelijke aanleg, omgevingsfactoren, veranderingen in het microbioom en epigenetische invloeden.
 
