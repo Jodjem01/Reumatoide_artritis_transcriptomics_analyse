@@ -7,9 +7,21 @@ De laatste jaren wordt RNA-sequencing (RNA-seq), een techniek binnen de transcri
 
 
 ### Materiaal en methoden
-RNA-gegevens uit bloedmonsters zijn vergeleken met het menselijke referentiegenoom (GRCh38) met behulp van het R-pakket `Rsubread`. Daarna zijn de genen geteld met `featureCounts`, wat resulteerde in een ruwe matrix met gen-tellingen. In totaal zijn er acht monsters geanalyseerd (vier van RA-patiënten en vier van gezonde controles). Met DESeq2 is onderzocht welke genen duidelijk meer of minder actief waren. Genen werden als “significant verschillend” beschouwd bij een aangepaste p-waarde (padj) < 0,05 én een log2FoldChange groter dan 1 of kleiner dan -1.
 
-Vervolgens is er pathway-analyse gedaan met het `pathview`-pakket, gericht op de KEGG-pathway voor RA (hsa05323). Ook is een GO-analyse (Gene Ontology) uitgevoerd met `goseq`, waarbij gecorrigeerd werd voor verschillen in genlengte. Hiervoor zijn gegevens over genlengtes en ID’s opgehaald via databases als `org.Hs.eg.db` en `biomaRt`.
+De RNA-seq dataset bestond uit acht bloedmonsters (vier RA-patiënten en vier gezonde controles). De ruwe FASTQ-bestanden zijn verwerkt volgens een gestandaardiseerde transcriptomics-workflow. De reads zijn eerst uitgelijnd op het humane referentiegenoom GRCh38 met het R-pakket Rsubread (allign()). Hierbij is gebruik gemaakt van de bijbehorende Ensembl-annotatie (GTF-bestand).
+
+Na het uitlijnen zijn de gemapte reads per gen geteld met featureCounts. Op de ruwe countmatrix die hieruit kwam is een kwaliteitscontrole uitgevoerd. Genen met lage expressie over alle samples zijn verwijderd om achtergrondruis te verminderen.
+
+Voor normalisatie en differentiële expressie analyse is DESeq2 gebruikt. DESeq2 past de median-of-ratios normalisatie methode toe om verschillen in sequencing-diepte aan te passen en te verbeteren. Genen werden beschouwd als significant als aan de volgende voorwaarden voldaan werd:
+
+
+-	Adjusted p-value < 0,05
+-	Absolute log2 fold change > 1
+
+Pathway analyse is uitgevoerd met pathview, gericht op KEGG-routes die relevant zijn voor RA. Een GO-verrijkingsanalyse is uitgevoerd met goseq, waarbij compensatie voor genlengtebias is toegepast. Gen lengtes en relevante ID-conversies zijn verkregen via org.Hs.eg.db en biomaRt.
+
+Alle gebruikte scripts zijn opgenomen in de map Scripts/ en de gegenereerde figuren tabellen en figuren in Results/. Een overzicht van de volledige workflow is toegevoegd als stroomschema in Assets/Workflow_Flowschema
+
 
 ### Resultaten
 De resultaten zijn te vinden in de folder 'Results'. Er zijn een [Volcano plot](Results/VolcanoplotWC.png), [Top 10 upregulated genes (barplot)](Results/top%2010%20upregulated%20genes%20barplot.png), [Top 10 downregulated genes (barplot)](Results/top%2010%20downregulated%20genes%20barplot.png), [KEGG Pathway RA (hsa05323)](Results/hsa05323.pathview.png), [KEGG Pathway hsa04610](Results/hsa04610.pathview.png) en een [GO verrijkte processen (csv)](Results/GO_significante_resultaten.csv) gemaakt.
