@@ -15,6 +15,7 @@ Na het uitlijnen zijn de gemapte reads per gen geteld met featureCounts, er is e
 Voor normalisatie en differentiële expressie analyse is DESeq2 gebruikt. Genen werden beschouwd als significant als aan de volgende voorwaarden voldaan werd:
 
 •	Adjusted p-value < 0,05
+
 •	Absolute log2 fold change > 1
 
 Pathway analyse is uitgevoerd met pathview, gericht op KEGG-routes die relevant zijn voor RA. Een GO-verrijkingsanalyse is uitgevoerd met goseq. Gen lengtes en relevante ID-conversies zijn verkregen via org.Hs.eg.db en biomaRt.
